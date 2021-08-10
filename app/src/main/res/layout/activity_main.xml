@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cloud"
+    tools:context=".MainActivity"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/arizonia"
+                android:text="Registration"
+                android:textColor="@color/teal_200"
+                android:textSize="45dp"
+                android:textStyle="bold" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/material_on_surface_stroke">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/lbutton"
+                        android:elevation="10dp"
+                        android:hint="Mobile No*"
+                        android:inputType="phone"
+                        android:textColor="#6699cc"
+                        android:textStyle="bold"
+                        />
+
+                    <EditText
+                        android:id="@+id/fname"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/lbutton"
+                        android:elevation="10dp"
+                        android:hint="Full Name*"
+                        android:inputType="text"
+                        android:textColor="#6699cc"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Gender*"
+                            android:textSize="20sp"/>
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:textSize="20sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textSize="20sp"/>
+
+                    </RadioGroup>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Select DOB*-"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:elevation="10dp"
+                        android:inputType="date"
+                        android:layout_marginTop="20dp"
+                        />
+
+                        <ImageButton
+                            android:id="@+id/imagebutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_date_range_24" />
+                </LinearLayout>
+                    <EditText
+                        android:id="@+id/Address1"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/lbutton"
+                        android:elevation="10dp"
+                        android:hint="Address Line 1*"
+                        android:inputType="textMultiLine"
+                        android:textColor="#6699cc"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/Address2"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background ="@drawable/lbutton"
+                        android:elevation="10dp"
+                        android:hint="Address Line 2"
+                        android:inputType="textMultiLine"
+                        android:textColor="#6699cc"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/pin"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/lbutton"
+                            android:elevation="10dp"
+                            android:hint="pin code*"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textColor="#6699cc"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/check"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_toRightOf="@id/pin"
+                            android:background="@drawable/lbutton"
+                            android:text="Check"
+                            android:textColor="#fff"
+                            android:textSize="18dp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/District"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:elevation="10dp"
+                        android:hint="District*"
+                        android:inputType="textMultiLine"
+                        android:textColor="#6699cc"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/State"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:elevation="10dp"
+                        android:hint="State*"
+                        android:inputType="textMultiLine"
+                        android:textColor="#6699cc"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/Register"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lbutton"
+                android:text="Register"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
